@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config(); // ← This should be at the top before anything else
 
 const bookingRoutes = require('./routes/booking');
-const authRoutes = require('./routes/auth'); // ❌ Missing closing parenthesis
+const authRoutes = require('./routes/auth'); 
 
 const express = require("express");
 const cors = require("cors");
