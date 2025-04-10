@@ -9,7 +9,15 @@ const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
+const corsOptions = {
+    origin: [
+      'http://localhost:3000', // Local frontend
+      'https://train-booking-frontend-mu.vercel.app' // Deployed frontend
+    ],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204
+  };
 app.use(cors());
 app.use(express.json());
 
