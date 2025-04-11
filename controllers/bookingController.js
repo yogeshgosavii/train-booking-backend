@@ -110,7 +110,6 @@ exports.getUserBookedSeats = async (req, res) => {
 
 
 // DELETE /api/seats/cancel-booking
-// DELETE /api/seats/cancel-booking
 exports.cancelBooking = async (req, res) => {
   const client = await pool.connect();
   try {
