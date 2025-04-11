@@ -77,7 +77,7 @@ Returns:
 
 #### `GET /api/bookings/my-bookings`
 
-Book seats (Requires JWT in `Authorization` header):
+(Requires JWT in `Authorization` header):
 
 Returns:
 
@@ -87,7 +87,7 @@ Returns:
 
 #### `DELETE /api/bookings/cancel-booking`
 
-Book seats (Requires JWT in `Authorization` header):
+(Requires JWT in `Authorization` header):
 
 ```json
 {searnumber : [1, 2, 3, 4]}
@@ -109,6 +109,7 @@ Returns:
 #### `GET /api/auth/me`
 
 Fetch user details and their booking info:
+(Requires JWT in `Authorization` header):
 
 Returns:
 
